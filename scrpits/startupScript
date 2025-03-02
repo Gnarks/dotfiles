@@ -1,0 +1,8 @@
+#!/bin/bash
+# statupScript
+
+
+#i3-msg 'workspace 1; exec tmux \ new-session "nvim ~/todos"'
+
+
+#i3-msg 'workspace 2; exec setsid firefox &> /dev/null'

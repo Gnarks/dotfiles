@@ -1,0 +1,18 @@
+#!/bin/bash
+# displaybrightness.sh
+
+volume=$(amixer get -c 0 Headphone | tail -2 | awk '{print $5}' | uniq | sed -r 's/\[//g' | sed -r 's/\]//g')
+
+muted=$(amixer get -c 0 Headphone | tail -2 | grep -c '\[on\]')
+
+
+brightness_icon=""
+
+if [ $muted -eq 0 ] ; then
+	dunstify -t 1000 -h string:x-dunst-stack-tag:sound_notif -h int:value:$volume "  $volume"
+
+else
+	dunstify -t 1000 -h string:x-dunst-stack-tag:sound_notif -h int:value:$volume "$brightness_icon $volume"
+fi
+
+

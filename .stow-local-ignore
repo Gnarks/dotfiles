@@ -1,0 +1,8 @@
+# ignore files under those repositories :
+\.git
+\.gitignore
+\scripts
+
+
+# ignore those files :
+^/README.*
