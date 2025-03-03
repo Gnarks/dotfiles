@@ -36,9 +36,6 @@ vim.opt.ignorecase = true
 -- permits colorschemes
 vim.opt.termguicolors = true
 
--- setting up a vim global variable (leader key) to space
-vim.g.mapleader = " "
-
 -- options de completions (ne change rien)
 vim.completeopt = {"menu", "noinsert", "noselect"}
 
