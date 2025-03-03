@@ -11,7 +11,6 @@ return {
       -- gives more info context from the lsp
       -- permits to move through the snippet
       {'L3MON4D3/LuaSnip', build = "make install_jsregexp CC=gcc.exe SHELL=C:/path/to/sh.exe .SHELLFLAGS=-c",
-        tag= "v2.*",
         dependencies = {"rafamadriz/friendly-snippets"}
       },
 
