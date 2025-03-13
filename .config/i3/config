@@ -47,8 +47,8 @@ exec xinput set-prop 10 319 1
 exec xinput set-prop 10 342 50
 exec xinput set-prop 10 343 50
 
-# exec unclutter to remove mouse cursor when not used
-exec unclutter &
+# press mod m to disable or enable mouse
+bindsym $mod+m exec xinput | grep 10 | grep floating &> /dev/null && xinput enable 10 || xinput disable 10
 
 # startup todo file in workspace 1 in boot 
 #exec --no-startup-id i3-msg 'workspace 1; exec tmux start-server && tmux new-session -s "todo" "$EDITOR" ~/todos'
