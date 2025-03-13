@@ -6,6 +6,7 @@ return {
 
     dependencies = {
       'hrsh7th/cmp-nvim-lsp',-- connection beetween nvim cmp and nvim lsp
+      'hrsh7th/cmp-nvim-lsp-signature-help',
       'hrsh7th/cmp-buffer',-- to get informations from the buffer an give it to cmp
       'hrsh7th/cmp-path',-- to give info from the path and give it to cmp
       -- gives more info context from the lsp
@@ -44,6 +45,7 @@ return {
         sources = {
           {name = "luasnip"},
           {name = "nvim_lsp"},
+          {name = "nvim_lsp_signature_help"},
           {name = "buffer"},
           {name = "path"},
         },
@@ -75,6 +77,7 @@ return {
               buffer = "[Buffer]",
               path = "[Path]",
               nvim_lsp = "[Lsp]",
+              nvim_lsp_signature_help = "[Sign]",
             })
           })
         },
