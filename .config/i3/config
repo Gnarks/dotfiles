@@ -48,18 +48,10 @@ exec xinput set-prop 10 342 50
 exec xinput set-prop 10 343 50
 
 # hides the mouse after 1 second
-exec unclutter --timeout 1 --jitter 50 --ignore-scrolling --start-hidden --ignore-buttons 1,2,3,4,5,6,7 
+exec --no-startup-id unclutter --timeout 1 --jitter 50 --ignore-scrolling --start-hidden --ignore-buttons 1,2,3,4,5,6,7 -b
 
 # press mod m to disable or enable mouse
 bindsym $mod+m exec xinput | grep 10 | grep floating &> /dev/null && xinput enable 10 || xinput disable 10
-
-# startup todo file in workspace 1 in boot 
-#exec --no-startup-id i3-msg 'workspace 1; exec tmux start-server && tmux new-session -s "todo" "$EDITOR" ~/todos'
-#exec --no-startup-id i3-msg 'workspace 2; exec firefox'
-
-# augment resolution of bar
-exec xrandr --dpi 140 &
-
 
 # enable brightness Up and Down
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && displaybrightness
@@ -90,8 +82,6 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+d kill
 
-# sets the mouse to top right corner (hide it)
-bindsym  $mod+ exec kitty
 
 # start dmenu (a program launcher)
 bindsym $mod+Tab exec --no-startup-id dmenu_run
@@ -174,7 +164,7 @@ bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+bindsym $mod+0 workspace number $ws0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -252,5 +242,5 @@ bar {
 				modifier $mod
 
         status_command i3status
-				font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Brands Regular, 
+				font pango:Font Awesome Brands Regular 18
 }
