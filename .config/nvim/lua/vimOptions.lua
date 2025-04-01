@@ -39,3 +39,4 @@ vim.opt.termguicolors = true
 -- options de completions (ne change rien)
 vim.completeopt = {"menu", "noinsert", "noselect"}
 
+vim.diagnostic.config({ virtual_text = true })
