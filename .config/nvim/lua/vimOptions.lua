@@ -36,7 +36,6 @@ vim.opt.ignorecase = true
 -- permits colorschemes
 vim.opt.termguicolors = true
 
--- options de completions (ne change rien)
-vim.completeopt = {"menu", "noinsert", "noselect"}
+vim.diagnostic.config({ virtual_text = true }) -- enable the virtual text on diagnostics
 
-vim.diagnostic.config({ virtual_text = true })
+vim.g.maplocalleader = ',' -- setup the local leader for latex commands
