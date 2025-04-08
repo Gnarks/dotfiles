@@ -5,6 +5,7 @@ dotfiles from my arch linux laptop
 ## requirements 
 
 ### git
+### gnu stow
 
 ## installation 
 
@@ -17,3 +18,11 @@ Then use gnu stow to symlink all dotfiles (in dotfiles dir)
 ```
 $ stow .
 ```
+
+## note for myself
+
+don't forget to 
+```
+$ stow .
+```
+after adding files to symlink them
