@@ -21,9 +21,17 @@ export EDITOR=/usr/bin/nvim
 # pipes à la con pour zoli
 alias pipes="pipes.sh -p 6 -t 1 -f 50 -R -r 25000 -s 5 -K"
 alias n="nvim"
-
-# permet de copier coller vers clipboard avec <>
+# make a function (alias) for zathura to run without taking the terminal (unmodular)
+function zathura() {
+  /bin/zathura $1 & disown 
+}
+# permet de copier coller vers clipboard avec $ output > clipboard
 alias clipboard="xclip -selection clipboard"
+
+
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# Created by `pipx` on 2025-05-02 13:03:05
+export PATH="$PATH:/home/etude/.local/bin"
