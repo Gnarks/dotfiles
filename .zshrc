@@ -22,11 +22,13 @@ export EDITOR=/usr/bin/nvim
 alias pipes="pipes.sh -p 6 -t 1 -f 50 -R -r 25000 -s 5 -K"
 alias n="nvim"
 # make a function (alias) for zathura to run without taking the terminal (unmodular)
-function zathura() {
+function zat() {
   /bin/zathura $1 & disown 
 }
 # permet de copier coller vers clipboard avec $ output > clipboard
 alias clipboard="xclip -selection clipboard"
+alias gs="git status"
+alias gc="git checkout"
 
 
 
