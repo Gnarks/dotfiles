@@ -21,6 +21,8 @@ export EDITOR=/usr/bin/nvim
 # pipes à la con pour zoli
 alias pipes="pipes.sh -p 6 -t 1 -f 50 -R -r 25000 -s 5 -K"
 alias n="nvim"
+alias anki="setsid anki &> /dev/null"
+
 # make a function (alias) for zathura to run without taking the terminal (unmodular)
 function zat() {
   /bin/zathura $1 & disown 

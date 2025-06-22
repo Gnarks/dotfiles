@@ -1,14 +1,21 @@
 #!/bin/bash
-# displaybrightness.sh
+# displaysound.sh
 
+sink=$(pactl info | grep "Sink" | awk '{print $3}' | cut -b 1-4)
+
+if ["${sink}" == "alsa"] ; then 
 volume=$(amixer get -c 0 Headphone | tail -2 | awk '{print $5}' | uniq | sed -r 's/\[//g' | sed -r 's/\]//g')
-
 muted=$(amixer get -c 0 Headphone | tail -2 | grep -c '\[on\]')
+else # if the sink is bluez (connected to Headphone)
+volume=$(amixer get Master | tail -2 | awk '{print $5}' | uniq | sed -r 's/\[//g' | sed -r 's/\]//g')
+muted=$(amixer get Master | tail -2 | grep -c '\[on\]')
+fi
+
 
 
 brightness_icon=""
-
 if [ $muted -eq 0 ] ; then
+  if []
 	dunstify -t 1000 -h string:x-dunst-stack-tag:sound_notif -h int:value:$volume "  $volume"
 
 else

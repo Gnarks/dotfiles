@@ -59,9 +59,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%- && displaybrightness
 
 # use amixer to change audio
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec amixer set -c 0 Headphone 5%+ && $refresh_i3status && displaysound
-bindsym XF86AudioLowerVolume exec amixer set -c 0 Headphone 5%- && $refresh_i3status && displaysound
-bindsym XF86AudioMute exec amixer set -c 0 Master toogle && amixer set -c 0 Headphone toggle && $refresh_i3status && displaysound
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ && amixer set -c 0 Headphone 5%+ && $refresh_i3status && displaysound
+bindsym XF86AudioLowerVolume exec amixer set Master 5%- && amixer set -c 0 Headphone 5%- && $refresh_i3status && displaysound
+bindsym XF86AudioMute exec amixer set Master toggle && amixer set -c 0 Headphone toggle && $refresh_i3status && displaysound
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 #amixer set -c 0 Headphone toggle && amixer set -c 0 Master toogle
 
