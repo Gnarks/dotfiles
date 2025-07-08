@@ -6,7 +6,7 @@ return {
 
     dependencies = {
       'hrsh7th/cmp-nvim-lsp',-- connection beetween nvim cmp and nvim lsp
-      'hrsh7th/cmp-nvim-lsp-signature-help',
+      'hrsh7th/cmp-nvim-lsp-signature-help', -- gives information inside parenthesis
       'hrsh7th/cmp-buffer',-- to get informations from the buffer an give it to cmp
       'hrsh7th/cmp-path',-- to give info from the path and give it to cmp
       -- gives more info context from the lsp
@@ -84,6 +84,5 @@ return {
 
       })
     end,
-
   },
 }
