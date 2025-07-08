@@ -68,6 +68,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # screen shot taker 
 bindsym Print exec flameshot gui 
 
+# connect to headphones with mod+b+c
+bindsym $mod+b exec bluetoothtoggle
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
