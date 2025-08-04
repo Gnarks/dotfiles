@@ -31,6 +31,7 @@ function zat() {
 alias clipboard="xclip -selection clipboard"
 alias gs="git status"
 alias gc="git checkout"
+alias joselin="kitty +kitten ssh -p 2248 joselin@joselin"
 
 
 
