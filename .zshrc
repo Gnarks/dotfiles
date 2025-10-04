@@ -31,7 +31,8 @@ function zat() {
 alias clipboard="xclip -selection clipboard"
 alias gs="git status"
 alias gc="git checkout"
-alias joselin="kitty +kitten ssh -p 2248 joselin@joselin"
+alias joselin="kitty +kitten ssh joselin@ssh.barathaba.space"
+alias calcurse="python ~/dotfiles/scripts/calcurse-caldav.py &>  /dev/null && calcurse"
 
 
 

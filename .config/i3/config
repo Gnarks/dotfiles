@@ -35,18 +35,17 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 
-# enable tapping 
-exec xinput set-prop 10 345 1
-exec xinput set-prop 10 346 1
-
-# Enable natural scrolling
-exec xinput set-prop 10 318 1
-exec xinput set-prop 10 319 1
-
-# Scrolling speed reduce 
-exec xinput set-prop 10 342 50
-exec xinput set-prop 10 343 50
-
+# # enable tapping 
+# exec xinput set-prop 10 346 1
+# exec xinput set-prop 10 347 1
+#
+# # Enable natural scrolling
+# exec xinput set-prop 10 319 1
+# exec xinput set-prop 10 320 1
+#
+# # Scrolling speed reduce 
+# exec xinput set-prop 10 343 50
+#
 # hides the mouse after 1 second
 exec --no-startup-id unclutter --timeout 1 --jitter 50 --ignore-scrolling --start-hidden --ignore-buttons 1,2,3,4,5,6,7 -b
 
