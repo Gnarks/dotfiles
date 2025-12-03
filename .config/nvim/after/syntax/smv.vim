@@ -15,10 +15,27 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 
-syn keyword KeyWords VAR IVAR MODULE
+syn keyword KeyWords VAR IVAR MODULE ASSIGN TRANS LTLSPEC CTLSPEC
+syn keyword BOOL TRUE FALSE
+syn keyword Func next init
+syn keyword Cond case esac
 
+
+syn match   Number	"\<0[oO]\%(_\=\o\)\+\>"
+syn match   Assignment "\(:=\|:\)" 
+syn match   Comment	"--.*$"
+syn match   Indentifier	"\<[a-zA-Z][0-9_a-zA-Z]*\>"
+syn match   par	"(\|)\|{\|}"
 
 
 hi def link KeyWords Define
+hi def link Number Number
+hi def link BOOL Constant
+hi def link Assignment Statement
+hi def link Func Function
+hi def link Indentifier Identifier
+hi def link par Label
+hi def link Cond Conditional
+
 
 
