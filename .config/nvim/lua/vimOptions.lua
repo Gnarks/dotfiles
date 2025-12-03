@@ -1,22 +1,22 @@
--- setup basic vim config  
+-- setup basic vim config
 
-vim.g.mapleader = " " -- setup space as an leader (first key to touch before doing shortcuts)
+vim.g.mapleader = " "         -- setup space as an leader (first key to touch before doing shortcuts)
 
-vim.opt.number = true -- see line number
+vim.opt.number = true         -- see line number
 vim.opt.relativenumber = true -- relative numbers
 
 -- tabs
-vim.opt.tabstop = 2 -- tabs are 2 spaces
-vim.opt.softtabstop = 2 -- ""
+vim.opt.tabstop = 2      -- tabs are 2 spaces
+vim.opt.softtabstop = 2  -- ""
 vim.opt.expandtab = true -- expand the tabs to spaces
-vim.opt.shiftwidth = 2 -- shift value of indent operator
+vim.opt.shiftwidth = 2   -- shift value of indent operator
 
 -- splits
 vim.opt.splitbelow = true -- new windows opens below rather than above
 vim.opt.splitright = true -- new windows opens to the right rather than the left
 
 -- unwrapping the lines
-vim.opt.wrap = true -- long lines don't wrap around they expand  
+vim.opt.wrap = true -- long lines don't wrap around they expand
 
 -- sync nvim clipboard and system clipboard
 vim.opt.clipboard = "unnamedplus"
@@ -38,4 +38,8 @@ vim.opt.termguicolors = true
 
 vim.diagnostic.config({ virtual_text = true }) -- enable the virtual text on diagnostics
 
-vim.g.maplocalleader = ',' -- setup the local leader for latex commands
+vim.g.maplocalleader = ','                     -- setup the local leader for latex commands
+
+
+-- to remove (only for the nuXmv presentation)
+vim.filetype.add({ pattern = { [".*..smv"] = "smv" } })
