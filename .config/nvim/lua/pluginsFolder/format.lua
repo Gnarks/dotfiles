@@ -12,7 +12,7 @@ return {
         typescriptreact = { "prettier" },
         svelte = { "prettier" },
         css = { "prettier" },
-        html = { "prettier" },
+        html = { "superhtml" },
         json = { "prettier" },
         yaml = { "prettier" },
         markdown = { "prettier" },
