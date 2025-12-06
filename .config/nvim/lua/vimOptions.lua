@@ -43,3 +43,9 @@ vim.g.maplocalleader = ','                     -- setup the local leader for lat
 
 -- to remove (only for the nuXmv presentation)
 vim.filetype.add({ pattern = { [".*..smv"] = "smv" } })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "smv",
+  callback = function()
+    vim.bo.commentstring = "-- %s"
+  end
+})
