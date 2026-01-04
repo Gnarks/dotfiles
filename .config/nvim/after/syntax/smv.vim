@@ -15,9 +15,9 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 
-syn keyword KeyWords VAR IVAR MODULE ASSIGN TRANS LTLSPEC CTLSPEC INVARSPEC
+syn keyword KeyWords VAR IVAR MODULE ASSIGN TRANS LTLSPEC CTLSPEC INVARSPEC INVAR
 syn keyword BOOL TRUE FALSE
-syn keyword Func next init
+syn keyword Func next init toint
 syn keyword Cond case esac
 
 
