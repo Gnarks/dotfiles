@@ -6,10 +6,10 @@ vim.opt.number = true         -- see line number
 vim.opt.relativenumber = true -- relative numbers
 
 -- tabs
-vim.opt.tabstop = 2      -- tabs are 2 spaces
-vim.opt.softtabstop = 2  -- ""
-vim.opt.expandtab = true -- expand the tabs to spaces
-vim.opt.shiftwidth = 2   -- shift value of indent operator
+vim.opt.tabstop = 2       -- tabs are 2 spaces
+vim.opt.softtabstop = 2   -- ""
+vim.opt.expandtab = false -- expand the tabs to spaces
+vim.opt.shiftwidth = 2    -- shift value of indent operator
 
 -- splits
 vim.opt.splitbelow = true -- new windows opens below rather than above
