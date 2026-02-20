@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export DISPLAY=:0 
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
+percentage=$(cat /sys/class/power_supply/BAT1/capacity)
+
+# Script to toggle i3bar
+if [ $(head -n 1  /sys/class/power_supply/BAT1/capacity) -lt 20 ]; then
+  for i in $(seq 1 10);
+  do
+    dunstify -t 800 -h string:x-dunst-stack-tag:battery_notif -h int:value:$percentage "🔋 : $percentage%"
+      sleep 1;
+  done
+elif [ $(head -n 1  /sys/class/power_supply/BAT1/capacity) -lt 10 ]; then
+  for i in $(seq 1 20);
+  do
+    dunstify -t 500 -h string:x-dunst-stack-tag:battery_notif -h int:value:$percentage "🪫 : $percentage%"
+      sleep 0.5;
+  done
+fi

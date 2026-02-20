@@ -370,6 +370,20 @@
 				icon_position=off
 				highlight="#FF00FF"
 
+[MediumBarBatApp]
+				summary="🔋*"
+				background="#918080"
+				frame_color="#fcba04"
+				icon_position=off
+				highlight="#fcba04"
+
+[LowBarBatApp]
+				summary="🪫*"
+				background="#a13333"
+				frame_color="#fcba04"
+				icon_position=off
+				highlight="#220901"
+
 [displaysound]
 				summary=" *"
 
