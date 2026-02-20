@@ -1,4 +1,7 @@
 -- special config for the ltex lsp
+-- adds a jmv arg to overcome the XML limit for english dictionnaries
+
+vim.env.JAVA_TOOL_OPTIONS = "-Djdk.xml.totalEntitySizeLimit=0"
 vim.lsp.config.ltex = {
   -- supports english and french
   language = { "en-US", "fr-FR", },
