@@ -1,0 +1,9 @@
+[user]
+	email = 231026@umons.ac.be
+	name = Gnarks
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[alias]
+  fap = fetch --all --prune
