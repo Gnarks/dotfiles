@@ -11,16 +11,17 @@ zstyle :compinstall filename '/home/etude/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-#
-#
+
 
 PROMPT='%F{blue}%n%f@%F{magenta}%1d%f%# '
 
 export EDITOR=/usr/bin/nvim
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # pipes à la con pour zoli
 alias pipes="pipes.sh -p 6 -t 1 -f 50 -R -r 25000 -s 5 -K"
 alias n="nvim"
+alias vial="sudo QT_SCALE_FACTOR=2 /opt/vial-appimage/vial-appimage.AppImage"
 alias anki="setsid anki &> /dev/null"
 
 # make a function (alias) for zathura to run without taking the terminal (unmodular)
