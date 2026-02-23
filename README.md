@@ -2,6 +2,10 @@
 
 dotfiles from my arch linux laptop
 
+# Installed package using pacman
+
+the installed packages are stored in ./installed
+
 ## requirements 
 
 ### git

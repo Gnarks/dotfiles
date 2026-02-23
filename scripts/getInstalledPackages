@@ -1,0 +1,4 @@
+#!/bin/bash
+# getInstalledPackages.sh
+
+sudo pacman -Qqe > ../installed
