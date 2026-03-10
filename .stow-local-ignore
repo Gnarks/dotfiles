@@ -2,6 +2,7 @@
 \.git
 \.gitignore
 /scripts
+installed
 
 
 # ignore those files :
