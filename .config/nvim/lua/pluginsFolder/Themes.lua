@@ -1,5 +1,5 @@
 return {
-    {  -- create a table with a config function.  
+    { -- create a table with a config function.
         -- the config function is only called when lazy is sure that the plugin is installed
         "marko-cerovac/material.nvim",
         --[[config = function()
@@ -19,6 +19,10 @@ return {
         "EdenEast/nightfox.nvim",
         config = function()
             vim.cmd.colorscheme("carbonfox")
+
+            -- setting the highlight color as
+
+            vim.api.nvim_set_hl(0, "Visual", { bg = "#9e73af" })
         end,
     }
 }
