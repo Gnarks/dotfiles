@@ -23,6 +23,7 @@ cronie
 cyme
 dmenu
 docker
+docker-buildx
 dolphin
 dunst
 efibootmgr
@@ -72,6 +73,7 @@ mosquitto
 neofetch
 neovim
 networkmanager
+nix
 nmap
 noto-fonts-emoji
 openssh
@@ -81,6 +83,8 @@ pacman-contrib
 pass
 pipes.sh
 pmd
+podman
+puddletag
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -124,6 +128,7 @@ texlive-basic
 texlive-bibtexextra
 texlive-binextra
 texlive-context
+texlive-fontsextra
 texlive-fontsrecommended
 texlive-fontutils
 texlive-langfrench
@@ -133,6 +138,7 @@ texlive-luatex
 texlive-mathscience
 texlive-pictures
 texlive-plaingeneric
+tk
 tmux
 todoman
 tree-sitter-cli
