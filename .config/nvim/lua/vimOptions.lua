@@ -6,10 +6,10 @@ vim.opt.number = true         -- see line number
 vim.opt.relativenumber = true -- relative numbers
 
 -- tabs
-vim.opt.tabstop = 2       -- tabs are 2 spaces
-vim.opt.softtabstop = 2   -- ""
+vim.opt.tabstop = 4       -- tabs are 4 spaces
+vim.opt.softtabstop = 4   -- ""
 vim.opt.expandtab = false -- expand the tabs to spaces
-vim.opt.shiftwidth = 2    -- shift value of indent operator
+vim.opt.shiftwidth = 4    -- shift value of indent operator
 
 -- splits
 vim.opt.splitbelow = true -- new windows opens below rather than above
@@ -44,8 +44,8 @@ vim.g.maplocalleader = ','                     -- setup the local leader for lat
 -- to remove (only for the nuXmv presentation)
 vim.filetype.add({ pattern = { [".*..smv"] = "smv" } })
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "smv",
-  callback = function()
-    vim.bo.commentstring = "-- %s"
-  end
+	pattern = "smv",
+	callback = function()
+		vim.bo.commentstring = "-- %s"
+	end
 })
