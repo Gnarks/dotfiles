@@ -52,7 +52,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id unclutter --timeout 1 --jitter 50 --ignore-scrolling --start-hidden --ignore-buttons 1,2,3,4,5,6,7 -b
 
 # press mod m to disable or enable mouse
-bindsym $mod+m exec xinput | grep 10 | grep floating &> /dev/null && xinput enable 10 || xinput disable 10
+bindsym $mod+m exec xinput | grep 7 | grep floating &> /dev/null && xinput enable 7 || xinput disable 7
 
 # enable brightness Up and Down
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && displaybrightness
