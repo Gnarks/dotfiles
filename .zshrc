@@ -41,4 +41,4 @@ alias calcurse="python ~/dotfiles/scripts/calcurse-caldav.py &>  /dev/null && ca
 eval "$(zoxide init zsh)"
 
 # Created by `pipx` on 2025-05-02 13:03:05
-export PATH="$PATH:/home/etude/.local/bin"
+export PATH="$PATH:/home/etude/.cargo/bin"
