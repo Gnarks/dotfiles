@@ -38,7 +38,8 @@ return {
 							"png",
 							"jpg",
 							"JPG",
-							"webp"
+							"webp",
+							"mp4"
 						}
 						local flag = 0
 
