@@ -31,7 +31,7 @@ return {
 					custom_open = function(state)
 						local node = state.tree:get_node()
 						local path = node:get_id()
-						local extension = path:match "%.(%a-)$"
+						local extension = path:match "%.(%a-%d-)$"
 
 						local extension_list = {
 							"pdf",
