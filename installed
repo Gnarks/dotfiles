@@ -24,6 +24,7 @@ docker
 docker-buildx
 docker-compose
 dolphin
+dosfstools
 dunst
 efibootmgr
 exfatprogs
@@ -42,6 +43,7 @@ i3-wm
 i3blocks
 i3lock
 i3status
+imagemagick
 inetutils
 inkscape
 inspectrum
@@ -55,7 +57,6 @@ libnotify
 libosmosdr
 libuhd-utils
 lightdm
-lightdm-gtk-greeter
 lightdm-mini-greeter
 linux
 linux-firmware
@@ -75,6 +76,7 @@ otf-font-awesome
 pacman-contrib
 pass
 pipes.sh
+powertop
 puddletag
 pulseaudio
 pulseaudio-alsa
@@ -88,6 +90,7 @@ python-numpy
 python-openpyxl
 python-pandas
 python-pip
+python-pygame
 python-scikit-learn
 python-scipy
 python-seaborn
@@ -95,6 +98,7 @@ python-sigmf
 python-statsmodels
 python-wxpython
 python-xlrd
+qt5-imageformats
 qt5ct
 ranger
 rsync
@@ -111,23 +115,28 @@ stow
 swig
 tailscale
 texlive-basic
+texlive-binextra
 texlive-context
 texlive-fontsextra
 texlive-fontsrecommended
 texlive-fontutils
 texlive-langfrench
 texlive-luatex
+texlive-meta
 texlive-pictures
 texlive-plaingeneric
 tk
 tmux
+torbrowser-launcher
 tree-sitter-cli
 ttf-fira-code
 ttf-nerd-fonts-symbols
 unclutter
 unrar
 unzip
+valgrind
 vial-appimage
+vlc-plugin-ffmpeg
 vulkan-intel
 wfuzz
 wireshark-qt
