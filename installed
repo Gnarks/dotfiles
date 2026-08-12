@@ -1,4 +1,5 @@
 acpi
+aerc
 alsa-utils
 android-tools
 anki-bin
@@ -76,7 +77,6 @@ otf-font-awesome
 pacman-contrib
 pass
 pipes.sh
-powertop
 puddletag
 pulseaudio
 pulseaudio-alsa
@@ -90,7 +90,6 @@ python-numpy
 python-openpyxl
 python-pandas
 python-pip
-python-pygame
 python-scikit-learn
 python-scipy
 python-seaborn
@@ -134,7 +133,6 @@ ttf-nerd-fonts-symbols
 unclutter
 unrar
 unzip
-valgrind
 vial-appimage
 vlc-plugin-ffmpeg
 vulkan-intel

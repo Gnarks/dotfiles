@@ -35,7 +35,8 @@ alias gc="git checkout"
 alias joselin="kitty +kitten ssh joselin@ssh.barathaba.space"
 alias calcurse="python ~/dotfiles/scripts/calcurse-caldav.py &>  /dev/null && calcurse && python ~/dotfiles/scripts/calcurse-caldav.py &>  /dev/null "
 
-
+# necessary for aerc
+export GPG_TTY=$(tty)
 
 # zoxide
 eval "$(zoxide init zsh)"
