@@ -5,8 +5,8 @@
 # Save as ~/.config/aerc/stylesets/rose-pine
 
 # Base styling
-default.fg=#9ccfd8
-default.bg=#191724
+default.fg=#e0def4
+default.bg=#232136
 
 success.fg=#31748f
 error.fg=#eb6f92
@@ -17,20 +17,21 @@ title.fg=#c4a7e7
 
 header.fg=#c4a7e7
 
-spinner.fg=#6e6a86
+spinner.fg=#ffffff
 
 part_filename.fg=#f6c177
 part_mimetype.fg=#c4a7e7
 
 # Global selection
-*.selected.fg=#191724
-*.selected.bg=#ebbcba
+*.selected.fg=#e0def4
+*.selected.bg=#4e3f61
 *.selected.bold=true
 
 # Message list
 msglist_default.fg=#9ccfd8
 msglist_default.bg=#1f1d2e
 msglist_unread.fg=#524f67
+msglist_unread.bg=#383457
 msglist_unread.bold=true
 msglist_read.fg=#6e6a86
 msglist_flagged.fg=#f6c177
@@ -65,8 +66,8 @@ border.fg=#191724
 border.bg=#191724
 
 # Tab
-tab.bg=#191724
-tab.selected.fg=#ebbcba
+tab.bg=#8465ab
+tab.selected.fg=#d0b3f5
 tab.selected.bg=#191724
 tab.selected.bold=true
 
@@ -82,4 +83,5 @@ diff_chunk_func.bold=true
 diff_add.fg=#524f67
 diff_del.fg=#eb6f92
 quote_*.fg=#908caa
+quote_*.bg=#908caa
 quote_1.fg=#21202e
