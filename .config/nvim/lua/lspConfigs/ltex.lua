@@ -10,7 +10,7 @@ local function setup_ltex(lang)
 				-- init_check = true,
 				path = ".ltex"
 			}
-			vim.api.nvim_create_user_command("LtexSwitchLang", function(args)
+			vim.api.nvim_create_user_command("LtexLang", function(args)
 				-- get the argument
 				local splited_args = vim.split(args.args, " ", { trimempty = true })
 				-- get the ltex lsp client
