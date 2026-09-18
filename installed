@@ -17,6 +17,9 @@ boost
 brightnessctl
 calcurse
 cbonsai
+ccid
+chromium
+chroncal-bin
 cppunit
 cronie
 cyme
@@ -28,6 +31,7 @@ dolphin
 dosfstools
 dunst
 efibootmgr
+eid-mw
 exfatprogs
 extra-cmake-modules
 firefox
@@ -66,7 +70,7 @@ log4cplus
 man-pages
 maven
 neofetch
-neovim
+neovim-nightly
 networkmanager
 nix
 nmap
@@ -76,6 +80,7 @@ os-prober
 otf-font-awesome
 pacman-contrib
 pass
+pcsc-tools
 pipes.sh
 puddletag
 pulseaudio
@@ -105,6 +110,7 @@ rustup
 scli-git
 signal-cli
 sl
+slack-desktop
 slock
 sof-firmware
 sqlmap
@@ -136,6 +142,7 @@ unzip
 vial-appimage
 vlc-plugin-ffmpeg
 vulkan-intel
+w3m
 wfuzz
 wireshark-qt
 woff2-font-awesome
@@ -198,6 +205,7 @@ yay
 zathura-pdf-mupdf
 zig
 zip
+zotero-bin
 zoxide
 zsh
 zsh-completions
