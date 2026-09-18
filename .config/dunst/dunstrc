@@ -1,6 +1,4 @@
 # See dunst(5) for all configuration options
-# Faire flag pour les notifs et birghtnes
-
 
 [global]
 
@@ -20,20 +18,20 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = none
+    follow = "keyboard"
 
     ### Geometry ###
 
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = (0, 600)
 
     # The maximum height of a single notification, excluding the frame.
-    height = 70
+    height = (0, 350)
 
     # Position the notification in the top right corner
-		origin = bottom-center
+	origin = bottom-center
 
     # Offset from the origin
     offset = 10x50
@@ -52,13 +50,13 @@
 
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
-    progress_bar_height = 10
+    progress_bar_height = 15
 
     # Set the frame width of the progress bar
     progress_bar_frame_width = 1
 
     # Set the minimum width for the progress bar
-    progress_bar_min_width = 150
+    progress_bar_min_width = 300
 
     # Set the maximum width for the progress bar
     progress_bar_max_width = 300
@@ -179,7 +177,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<span foreground=''5bb1b4><b>%s</b></span>\n%b"
+    # format = "<span foreground=''5bb1b4><b>%s</b></span>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -356,10 +354,14 @@
     timeout = 0
     override_pause_level = 60
 
-[skipSignalNotif]
+[SignalNotif]
 				appname="Signal"
-
 				skip_display=true
+
+[SlackNotif]
+				appname="Slack"
+				background="#2A2A2A"
+				frame_color="#f24b04"
 
 [displaybrightness]
 				summary=" *"
@@ -369,12 +371,14 @@
 				frame_color="#E6E6FA"
 				icon_position=off
 				highlight="#FF00FF"
+				history_ignore=yes
 
 [MediumBarBatApp]
 				summary="🔋*"
 				background="#918080"
 				frame_color="#fcba04"
 				icon_position=off
+				history_ignore=yes
 				highlight="#fcba04"
 
 [LowBarBatApp]
@@ -383,6 +387,7 @@
 				frame_color="#fcba04"
 				icon_position=off
 				highlight="#220901"
+				history_ignore=yes
 
 [displaysound]
 				summary=" *"
@@ -391,6 +396,7 @@
 				frame_color="#E6E6FA"
 				icon_position=off
 				highlight="#FF00FF"
+				history_ignore=yes
 
 
 
@@ -401,6 +407,7 @@
 				frame_color="#E6E6FA"
 				icon_position=off
 				highlight="#FF007F"
+				history_ignore=yes
 
 
 
